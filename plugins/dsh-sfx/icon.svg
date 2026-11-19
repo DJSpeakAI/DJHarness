@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Sound effects">
+  <rect x="0" y="0" width="64" height="64" rx="14" fill="#247bbf"/>
+  <path d="M25 45V22l18-4v18" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="20.5" cy="45.5" r="5.5" fill="#ffffff"/>
+  <circle cx="38.5" cy="41.5" r="5.5" fill="#ffffff"/>
+</svg>

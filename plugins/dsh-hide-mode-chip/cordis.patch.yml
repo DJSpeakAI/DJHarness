@@ -1,0 +1,3 @@
+- insert:
+    - id: hide-mode-chip
+      name: '@local/dsh-hide-mode-chip'

@@ -1,0 +1,20 @@
+{
+  "name": "@local/dsh-quote-menu",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "划词菜单（整页生效）：任何有文字的地方选中右键都能「问 AI」——页面内临时小浮窗，带模型选择与整段会话上下文，不入主会话；聊天区还能「引用」到当前/新会话。",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js"
+  },
+  "files": ["index.js", "client.js", "cordis.patch.yml", "README.md"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  }
+}

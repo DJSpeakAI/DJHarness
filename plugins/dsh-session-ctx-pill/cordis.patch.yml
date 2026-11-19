@@ -1,0 +1,3 @@
+- insert:
+    - id: session-ctx-pill
+      name: '@local/dsh-session-ctx-pill'

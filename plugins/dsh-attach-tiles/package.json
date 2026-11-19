@@ -1,0 +1,19 @@
+{
+  "name": "@local/dsh-attach-tiles",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Little DJ style attachment tiles (camera / album / file) behind the composer plus button.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js"
+  },
+  "files": ["index.js", "client.js", "cordis.patch.yml"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

@@ -1,0 +1,5 @@
+# 这份是「随包声明」：当前实际生效的是 profile 的 `- insert: - id: attach-tiles`。
+# 两边不要同时进 bundles，否则同一插件会被双重装载。
+- insert:
+    - id: attach-tiles
+      name: '@local/dsh-attach-tiles'

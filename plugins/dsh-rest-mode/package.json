@@ -1,0 +1,20 @@
+{
+  "name": "@local/dsh-rest-mode",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "输入框 ☾ 休息模式：在线=不懂就问；休息中=AI 自主决断（移植自 little DJ）",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js"
+  },
+  "files": ["index.js", "client.js", "cordis.patch.yml"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-layout", "@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  }
+}

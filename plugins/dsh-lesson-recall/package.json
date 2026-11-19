@@ -1,0 +1,12 @@
+{
+  "name": "@local/dsh-lesson-recall",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "教训自动检索：knowledge/lessons.json 按当前任务关键词动态注入相关教训（学 Devin 知识积累）",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": ["index.js"],
+  "dsh": {}
+}

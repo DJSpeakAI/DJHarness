@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Hidden mode picker",
+    "description": "Hides the mode picker above the new-task input, so a single all-in-one mode needs no visible switch."
+  }
+}

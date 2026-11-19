@@ -1,0 +1,12 @@
+# ---- 于 2026-11-18 加装「大管家自动换脑」（butler-rotate）----
+# 大管家会话（星闪球桥指向的 sessionId）上下文占用到阈值（默认 40%，config 可调）时自动：
+#   压缩老会话 → 新建 butler 会话 → 切桥（orb-bridge.json + /whoami）→ 老会话留痕并归档 → 推 rotate 事件让球播报。
+# 运行时覆盖（调试/测试，不用重启）：E:\DJH\home\butler-rotate.json
+- insert:
+    - id: butler-rotate
+      name: '@local/dsh-butler-rotate'
+      config:
+        threshold: 0.4
+        cooldownMs: 30000
+        preset: butler
+        notify: true

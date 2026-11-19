@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Scroll-hide chrome",
+    "description": "On phones, reading down the conversation tucks the top header and the bottom composer away; scrolling back up brings them right back."
+  }
+}

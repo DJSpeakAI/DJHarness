@@ -1,0 +1,11 @@
+{
+  "name": "@local/dsh-preset-switch",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "一次性 Host 插件：按请求文件把已有 Session 的 agentPreset 记录切到目标预设（append agent-preset/selected + flush）",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": ["index.js"]
+}

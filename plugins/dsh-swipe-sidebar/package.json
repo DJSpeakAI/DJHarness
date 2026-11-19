@@ -1,0 +1,21 @@
+{
+  "name": "@local/dsh-swipe-sidebar",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Mobile swipe gestures for the left sidebar drawer: swipe right from the left screen edge to open it, swipe left to close it.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": ["index.js", "client.js", "cordis.patch.yml", "locale/*.json", "icon.svg", "README.md"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

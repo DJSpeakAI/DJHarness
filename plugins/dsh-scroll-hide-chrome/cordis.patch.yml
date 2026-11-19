@@ -1,0 +1,6 @@
+# 手机端滚动隐藏上下框（纯 Client 半插件，无 Host 逻辑）。
+# 挂法与 dsh-swipe-sidebar 一致：profile 的 cordis.patch.yml 里用 - insert 直接挂，
+# 不进 package.json 的 bundles 列表。本文件只作为「随包声明」留档。
+- insert:
+    - id: scroll-hide-chrome
+      name: '@local/dsh-scroll-hide-chrome'

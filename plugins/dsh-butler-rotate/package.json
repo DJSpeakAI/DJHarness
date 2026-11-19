@@ -1,0 +1,19 @@
+{
+  "name": "@local/dsh-butler-rotate",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "大管家自动换脑：上下文到阈值（默认 40%）→ 压缩老会话 → 新建 butler 会话 → 切桥 → 归档老会话 → 星闪球播报",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js"
+  },
+  "files": ["index.js", "client.js", "cordis.patch.yml", "README.md"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

@@ -1,0 +1,5 @@
+node_modules/
+*.log
+secrets/
+*.dpapi
+*.example.json.bak

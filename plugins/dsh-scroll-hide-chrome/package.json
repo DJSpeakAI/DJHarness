@@ -1,0 +1,21 @@
+{
+  "name": "@local/dsh-scroll-hide-chrome",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Mobile reading mode: scrolling down hides the top header and the bottom composer, scrolling back up brings them back.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": ["index.js", "client.js", "cordis.patch.yml", "locale/*.json", "icon.svg", "README.md"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

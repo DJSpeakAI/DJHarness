@@ -1,0 +1,23 @@
+{
+  "name": "@local/dsh-session-ctx-pill",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "左侧会话列表每行显示上下文占用百分比（移植自 little DJ task189）",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js"
+  },
+  "files": ["index.js", "client.js", "cordis.patch.yml", "README.md"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-workspace"
+      ]
+    }
+  }
+}

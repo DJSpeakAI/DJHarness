@@ -1,0 +1,7 @@
+# 手机端左栏滑动手势（纯 Client 半插件，无 Host 逻辑）。
+# 这里按 dsh-attach-tiles 的挂法：profile 的 cordis.patch.yml 里用 - insert 直接挂，
+# 不进 package.json 的 bundles 列表，这样改完热生效、不用重启 DSH。
+# 本文件只作为「随包声明」留档；两边不要同时进 bundles，否则会双重装载。
+- insert:
+    - id: swipe-sidebar
+      name: '@local/dsh-swipe-sidebar'

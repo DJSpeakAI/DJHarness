@@ -1,0 +1,7 @@
+# 随包声明：挂载方式与 dsh-attach-tiles 相同 —— profile 的 cordis.patch.yml
+# 用 `- insert: - id: version-badge` 直接挂（热生效、不用重启 DSH），
+# 不进 profile package.json 的 bundles 列表。
+# 两边不要同时进 bundles，否则双重装载。
+- insert:
+    - id: version-badge
+      name: '@local/dsh-version-badge'

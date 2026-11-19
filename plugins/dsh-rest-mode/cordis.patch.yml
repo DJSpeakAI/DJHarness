@@ -1,0 +1,3 @@
+- insert:
+    - id: rest-mode
+      name: '@local/dsh-rest-mode'

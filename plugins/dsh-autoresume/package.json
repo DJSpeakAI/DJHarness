@@ -1,0 +1,14 @@
+{
+  "name": "@local/dsh-autoresume",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Restart 后续跑：Host 启动后恢复被中断的 Session 并投递续跑消息。",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": ["index.js", "cordis.patch.yml"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" }
+  }
+}

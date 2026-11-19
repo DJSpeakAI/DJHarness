@@ -1,0 +1,3 @@
+- insert:
+    - id: autoresume
+      name: '@local/dsh-autoresume'

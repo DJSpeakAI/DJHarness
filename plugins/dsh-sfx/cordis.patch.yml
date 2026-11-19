@@ -1,0 +1,3 @@
+- insert:
+    - id: sound-effects
+      name: '@local/dsh-sfx'

@@ -1,0 +1,23 @@
+{
+  "name": "@local/dsh-row-fork",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "左栏会话行 hover 快捷按钮里加一颗「分叉会话」（排在⋯更多右边），一点就分叉",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js"
+  },
+  "files": ["index.js", "client.js", "cordis.patch.yml", "README.md"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-workspace"
+      ]
+    }
+  }
+}

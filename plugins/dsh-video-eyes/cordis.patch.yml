@@ -1,0 +1,3 @@
+- insert:
+    - id: video-eyes
+      name: '@local/dsh-video-eyes'

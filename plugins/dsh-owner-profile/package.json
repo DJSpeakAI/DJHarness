@@ -1,0 +1,18 @@
+{
+  "name": "@local/dsh-owner-profile",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "主人画像：设置 › 主人画像 分区，读统一画像 profile.json（与小 DJ 同一份）",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js"
+  },
+  "files": ["index.js", "client.js"],
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

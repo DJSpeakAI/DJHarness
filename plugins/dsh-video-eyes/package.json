@@ -1,0 +1,19 @@
+{
+  "name": "@local/dsh-video-eyes",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "AI 眼睛耳朵：拖录屏视频进输入框 → DeepSeek ASR 语音稿 + 0.5s 抽帧变化去重 → 自动回填对话",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js"
+  },
+  "files": ["index.js", "client.js", "cordis.patch.yml"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

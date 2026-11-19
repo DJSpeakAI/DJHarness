@@ -1,0 +1,18 @@
+{
+  "name": "@local/dsh-msg-speak",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Message voice broadcast: mini TTS player (play/pause/stop) on each assistant reply, using DeepSeek TTS (stella/tide). Ported from littleDJ task347/362.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js"
+  },
+  "files": ["index.js", "client.js"],
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

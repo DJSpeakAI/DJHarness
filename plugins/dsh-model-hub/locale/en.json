@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Model hub",
+    "description": "Scans official pricing pages for model APIs and manages per-provider API keys."
+  }
+}

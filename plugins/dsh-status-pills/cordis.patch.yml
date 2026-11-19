@@ -1,0 +1,3 @@
+- insert:
+    - id: status-pills
+      name: '@local/dsh-status-pills'
