@@ -21,6 +21,14 @@ DSH 本身是「毛坯房」，DJH 提供一批开箱即用的本地插件，把
 | `dsh-plugin-hub` | 本地插件管理面板 |
 | `dsh-preset-switch` | 预设一键切换 |
 
+### 📦 也可单独从 npm 安装
+
+以下插件已发布到 npm，可独立安装后按 DSH 插件挂载方式启用：
+
+```bash
+npm i dsh-quote-menu dsh-swipe-sidebar dsh-scroll-hide-chrome dsh-row-fork dsh-sfx dsh-session-ctx-pill dsh-agent-progress
+```
+
 ### 🏠 增强类（按需装，部分需配 API key）
 | 插件 | 作用 |
 | --- | --- |
